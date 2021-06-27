@@ -1,6 +1,6 @@
 # Test Screen
 
-When I was a kid, I often viewed the test screen on our TV and wondered if I could recreate it. Now, 40 years later, I did.
+When I was a kid, I often viewed the test screen on our TV and wondered if I could recreate it. Now, 40 years later, I did it. And I plan to expand it with lots more functions.
 
 # Process
 This test screen is based on the Dutch Ziggo test screen which is transmitted on a channel to test the colors of your set. I took a photograph and used it as a basis for a design build in Figma. When done, I decided this test screen should also be coded. I choose to build it in vanilla CSS, to learn about its variables and calculations functions. I use these on a mid-regular base in Sass, but wanted to use a non-compiler language. To challenge myself. To learn.
