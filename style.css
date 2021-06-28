@@ -100,7 +100,7 @@ body {
 
 /* BG > STRIPED */
 .striped-top, .striped-right, .striped-bottom, .striped-left {
-  background-image: url('bg-three-stripes.svg');
+  background-image: url('images/bg-three-stripes.svg');
   background-size: contain;
 }
 .striped-top        { transform: rotate(270deg); }
@@ -112,7 +112,7 @@ body {
 .grid-left, .grid-right {
   position: absolute;
   z-index: 1;
-  background-image: url('bg-grid-left.svg');
+  background-image: url('images/bg-grid-left.svg');
   background-size: contain;
   width: var(--square-size);
   height: calc(calc(var(--square-size) * 5) + calc(var(--white-space) * 4));
@@ -121,14 +121,14 @@ body {
 .grid-left-top, .grid-right-top, .grid-left-bottom, .grid-right-bottom {
   position: absolute;
   z-index: 1;
-  background-image: url('bg-grid-left-top.svg');
+  background-image: url('images/bg-grid-left-top.svg');
   background-size: contain;
   width: calc(calc(var(--square-size) * 2) + var(--white-space));
   height: calc(calc(var(--square-size) * 2) + var(--white-space));
 }
 
 .grid-left-bottom, .grid-right-bottom {
-  background-image: url('bg-grid-left-bottom.svg');
+  background-image: url('images/bg-grid-left-bottom.svg');
   background-size: contain;
 } 
 
@@ -320,7 +320,7 @@ body {
 .grid-bar {
   position: relative;
   display: inline-block;
-  background-image: url('bg-grid-bar.svg');
+  background-image: url('images/bg-grid-bar.svg');
   background-size: contain;
   width: calc(var(--circle-size) - calc(calc(var(--square-size) + var(--white-space)) * 2));
   height: calc(calc(var(--square-size) * 2) + calc(var(--white-space) * 2));
