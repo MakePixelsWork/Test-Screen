@@ -1,0 +1,15 @@
+{
+  // Switched off, because you need to learn JavaScript
+  // "javascript.format.enable": false,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "html.format.wrapLineLength": 0,
+  "files.associations": {
+    "*.inc": "html"
+  }
+}

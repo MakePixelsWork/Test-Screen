@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "christian-kohler.path-intellisense",
+    "ecmel.vscode-html-css",
+    "editorconfig.editorconfig",
+    "formulahendry.auto-rename-tag"
+  ]
+}
