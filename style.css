@@ -2,21 +2,21 @@
   
   /* Scale whole TV screen, by deviding it with a number */
   /* TODO : Calculate VH/VW and create number accordingly */
-  --devided: 2;
+  --divider: 2;
 
   /* Squares */
-  --square-size: calc(150px/var(--devided));
+  --square-size: calc(150px/var(--divider));
 
   /* Circle */
   --circle-size: calc(calc(var(--square-size) * 12) + calc(var(--white-space) * 12));
   --circle-offset: calc(calc(calc(var(--square-size) / 2) + var(--white-space)) * -1);
   
   /* Rectangles */
-  --rectangle-thickness: calc(25px / var(--devided));
+  --rectangle-thickness: calc(25px / var(--divider));
   --rectangle-length: var(--square-size);
 
   /* Margins around shapes */
-  --margin-around: calc(5px / var(--devided));
+  --margin-around: calc(5px / var(--divider));
   --white-space: calc(var(--margin-around) * 2);
 
 }

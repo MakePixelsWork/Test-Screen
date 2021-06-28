@@ -16,12 +16,12 @@ I initially just winged the size, but soon decided that the squares should be 15
 
 Not soon after the 10px white-space was created, I decided that its better to use margins of 5px, on all sides of the squares and rectangles. This way it became a lot easier to build the HTML structure. Later it also became easier to calculate the different sizes.
 
-> You can in-/decreasing the size of the test screen, by changing the '--devided' var. If you enter the number 1, all squares will be 150px, resulting in a huge screen. Use the number 2, the size of the test screen will be recalculated and present squures of 75px, with all other spacing, margins, images* etcetera being recalculated to their respective sizes.
+> You can in-/decreasing the size of the test screen, by changing the '--divider' var. If you enter the number 1, all squares will be 150px, resulting in a huge screen. Use the number 2, the size of the test screen will be recalculated and present squures of 75px, with all other spacing, margins, images* etcetera being recalculated to their respective sizes.
 
 \* Images are set to 'contain' their divs, so will scale automatically. I've yet to devise a plan on how to create them in a non-image format. To be continued.
 
 # Future plans (to be decided)
-- Adding a slider/form that changed the size of the --devided var.
+- Adding a slider/form that changed the size of the --divider var.
 - Changing test screen based on viewport. Probably with vw and vh.
 - Creating more formats and/or other test screens
 - Creating funny test screens, like a smiley, etc.
