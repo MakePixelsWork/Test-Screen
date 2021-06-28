@@ -1,8 +1,7 @@
 :root {
   
-  /* Scale whole TV screen, by deviding it with a number */
-  /* TODO : Calculate VH/VW and create number accordingly */
-  --divider: 2;
+  /* Scale whole test screen, by deviding it with a number */
+    --divider: 2;
 
   /* Squares */
   --square-size: calc(150px/var(--divider));
