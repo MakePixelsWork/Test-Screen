@@ -7,7 +7,7 @@ When I was a kid, I often viewed the test screen on our TV and wondered if I cou
 # Process
 This test screen is based on the Dutch Ziggo test screen which is transmitted on a channel to test the colors of your set. I took a photograph and used it as a basis for a design build in Figma.
 
-<img src="images/readme/test-screen-on-tv.png" width="400">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/readme/test-screen-in-figma.png" width="400">
+<img src="images/readme/test-screen-on-tv.png" width="400">&nbsp;<img src="images/readme/test-screen-in-figma.png" width="400">
 
 When I was satisfied with the design (minus the weird surrounding circles), it was time to recreate this in code. I choose to build it in vanilla CSS, because I wanted to learn to apply variables and calculations. I've build sites in pure CSS for over 15 years, but am more of a Sass person these days. But I wanted to use a non-compiler language for this project, so anyone can use it. Its also nice to challenge myself, to learn new stuff from old methods.
 
