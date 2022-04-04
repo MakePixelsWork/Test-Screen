@@ -5,6 +5,10 @@
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "scss.format.enable": false,
+  "scss.format.newlineBetweenRules": false,
+  "scss.format.newlineBetweenSelectors": false,
+  "scss.format.spaceAroundSelectorSeparator": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
