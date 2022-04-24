@@ -1,7 +1,7 @@
 :root {
-  
+
   /* Scale whole test screen, by deviding it with a number */
-    --divider: 2;
+  --divider: 2;
 
   /* Squares */
   --square-size: calc(150px/var(--divider));
@@ -9,7 +9,7 @@
   /* Circle */
   --circle-size: calc(calc(var(--square-size) * 12) + calc(var(--white-space) * 12));
   --circle-offset: calc(calc(calc(var(--square-size) / 2) + var(--white-space)) * -1);
-  
+
   /* Rectangles */
   --rectangle-thickness: calc(25px / var(--divider));
   --rectangle-length: var(--square-size);
@@ -32,9 +32,11 @@ body {
 /* BG */
 .container {
   position: relative;
-  font-size: 0px; /* Solves inline-block spacing issue */
+  font-size: 0px;
+  /* Solves inline-block spacing issue */
   margin: auto;
-  white-space: nowrap; /* Solves inline-block breaking line issue */
+  white-space: nowrap;
+  /* Solves inline-block breaking line issue */
   width: calc(calc(var(--square-size) * 23) + calc(var(--rectangle-thickness) * 2) + calc(var(--white-space) * 25));
 }
 
@@ -64,7 +66,8 @@ body {
   margin: var(--margin-around);
 }
 
-.square, .square-white {
+.square,
+.square-white {
   position: relative;
   display: inline-block;
   background-color: #808080;
@@ -72,11 +75,13 @@ body {
   height: var(--square-size);
   margin: var(--margin-around);
 }
+
 .square-white {
   background-color: #ffffff;
 }
 
-.horizontal-black, .horizontal-white {
+.horizontal-black,
+.horizontal-white {
   display: inline-block;
   background-color: #000000;
   width: var(--rectangle-length);
@@ -84,7 +89,8 @@ body {
   margin: var(--margin-around);
 }
 
-.vertical-black, .vertical-white {
+.vertical-black,
+.vertical-white {
   display: inline-block;
   background-color: #000000;
   width: var(--rectangle-thickness);
@@ -92,23 +98,37 @@ body {
   margin: var(--margin-around);
 }
 
-.horizontal-white, .vertical-white {
+.horizontal-white,
+.vertical-white {
   background-color: #ffffff;
 }
 
 
 /* BG > STRIPED */
-.striped-top, .striped-right, .striped-bottom, .striped-left {
+.striped-top,
+.striped-right,
+.striped-bottom,
+.striped-left {
   background-image: url('images/bg-three-stripes.svg');
   background-size: contain;
 }
-.striped-top        { transform: rotate(270deg); }
-.striped-right      { transform: rotate(180deg); }
-.striped-bottom     { transform: rotate(90deg); }
+
+.striped-top {
+  transform: rotate(270deg);
+}
+
+.striped-right {
+  transform: rotate(180deg);
+}
+
+.striped-bottom {
+  transform: rotate(90deg);
+}
 
 
 /* BG > GRIDS */
-.grid-left, .grid-right {
+.grid-left,
+.grid-right {
   position: absolute;
   z-index: 1;
   background-image: url('images/bg-grid-left.svg');
@@ -117,7 +137,10 @@ body {
   height: calc(calc(var(--square-size) * 5) + calc(var(--white-space) * 4));
 }
 
-.grid-left-top, .grid-right-top, .grid-left-bottom, .grid-right-bottom {
+.grid-left-top,
+.grid-right-top,
+.grid-left-bottom,
+.grid-right-bottom {
   position: absolute;
   z-index: 1;
   background-image: url('images/bg-grid-left-top.svg');
@@ -126,14 +149,20 @@ body {
   height: calc(calc(var(--square-size) * 2) + var(--white-space));
 }
 
-.grid-left-bottom, .grid-right-bottom {
+.grid-left-bottom,
+.grid-right-bottom {
   background-image: url('images/bg-grid-left-bottom.svg');
   background-size: contain;
-} 
+}
 
-.grid-right         { transform: rotate(180deg); }
-.grid-right-top, 
-.grid-right-bottom  { transform: rotate(90deg); }
+.grid-right {
+  transform: rotate(180deg);
+}
+
+.grid-right-top,
+.grid-right-bottom {
+  transform: rotate(90deg);
+}
 
 
 /* BG > COLORS > LEFT + RIGHT */
@@ -151,15 +180,43 @@ body {
   height: calc(calc(var(--square-size) * 2) + var(--white-space));
 }
 
-.green-left     { background-color: #0BA78F; }
-.blue-left      { background-color: #4486DA; right: 0; }
-.pink-left      { background-color: #CF7196; bottom: 0; }
-.brown-left     { background-color: #AE8819; right: 0; bottom: 0; }
+.green-left {
+  background-color: #0BA78F;
+}
 
-.blue-right     { background-color: #4486DA; }
-.green-right    { background-color: #7D9024; }
-.purple-right   { background-color: #7A80CE; bottom: 0; }
-.brown-right    { background-color: #AE8819; bottom: 0; }
+.blue-left {
+  background-color: #4486DA;
+  right: 0;
+}
+
+.pink-left {
+  background-color: #CF7196;
+  bottom: 0;
+}
+
+.brown-left {
+  background-color: #AE8819;
+  right: 0;
+  bottom: 0;
+}
+
+.blue-right {
+  background-color: #4486DA;
+}
+
+.green-right {
+  background-color: #7D9024;
+}
+
+.purple-right {
+  background-color: #7A80CE;
+  bottom: 0;
+}
+
+.brown-right {
+  background-color: #AE8819;
+  bottom: 0;
+}
 
 
 /* CIRCLE */
@@ -200,18 +257,49 @@ body {
   overflow: hidden;
 }
 
-.yellow    { background-color: #CECF07; }
-.teal      { background-color: #27D0E4; }
-.green     { background-color: #19DD0C; }
-.pink      { background-color: #F93DFA; }
-.red       { background-color: #F22B26; }
-.blue      { background-color: #0915F5; }
+.yellow {
+  background-color: #CECF07;
+}
 
-.black     { background-color: #000000; }
-.gray-80   { background-color: #333333; }
-.gray-60   { background-color: #666666; }
-.gray-40   { background-color: #999999; }
-.gray-20   { background-color: #cccccc; }
+.teal {
+  background-color: #27D0E4;
+}
+
+.green {
+  background-color: #19DD0C;
+}
+
+.pink {
+  background-color: #F93DFA;
+}
+
+.red {
+  background-color: #F22B26;
+}
+
+.blue {
+  background-color: #0915F5;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.gray-80 {
+  background-color: #333333;
+}
+
+.gray-60 {
+  background-color: #666666;
+}
+
+.gray-40 {
+  background-color: #999999;
+}
+
+.gray-20 {
+  background-color: #cccccc;
+}
 
 /* Circle row 1 */
 .rectangle-black-1 {
@@ -222,7 +310,8 @@ body {
 }
 
 /* Circle row 2 */
-.rectangle-black-2, .rectangle-black-4 {
+.rectangle-black-2,
+.rectangle-black-4 {
   width: calc(calc(var(--square-size) * 3) + calc(var(--white-space) * 3));
   height: calc(var(--square-size) + var(--white-space));
   background-color: #000000;
@@ -264,13 +353,20 @@ body {
   position: relative;
   height: var(--square-size);
 }
-.row-inner-top, .row-inner-bottom {
+
+.row-inner-top,
+.row-inner-bottom {
   position: relative;
   height: calc(calc(var(--square-size) - var(--white-space)) / 2);
 }
-.row-inner-top { margin-bottom: var(--white-space); }
 
-.inner, .inner-sides, .inner-center {
+.row-inner-top {
+  margin-bottom: var(--white-space);
+}
+
+.inner,
+.inner-sides,
+.inner-center {
   position: relative;
   display: inline-block;
   width: var(--square-size);
@@ -278,20 +374,27 @@ body {
   background-color: #000000;
   margin: 0 var(--margin-around);
 }
+
 .inner-sides {
   width: calc(var(--square-size) / 2);
 }
+
 .inner-sides:first-child {
   margin: 0;
   margin-right: var(--margin-around);
 }
+
 .inner-sides:last-child {
   margin: 0;
   margin-left: var(--margin-around);
 }
-.inner-center { background-color: #000000; }
 
-.inner-rectangle-top, .inner-rectangle-bottom {
+.inner-center {
+  background-color: #000000;
+}
+
+.inner-rectangle-top,
+.inner-rectangle-bottom {
   position: absolute;
   z-index: 4;
   left: 0;
@@ -299,8 +402,14 @@ body {
   height: calc(calc(calc(var(--square-size) - var(--white-space)) / 2) + var(--white-space) + var(--square-size));
   background-color: #ffffff;
 }
-.inner-rectangle-top      { bottom: 0; }
-.inner-rectangle-bottom   { top: 0; }
+
+.inner-rectangle-top {
+  bottom: 0;
+}
+
+.inner-rectangle-bottom {
+  top: 0;
+}
 
 .inner-rectangle {
   position: absolute;
@@ -309,10 +418,26 @@ body {
   height: calc(calc(calc(var(--square-size) - var(--white-space)) / 2) + var(--white-space) + var(--square-size));
   background-color: #000000;
 }
-.inner-up-left    { left: 0; bottom: 0; }
-.inner-up-right   { right: 0; bottom: 0; }
-.inner-down-left  { left: 0; top: 0; }
-.inner-down-right { right: 0; top: 0; }
+
+.inner-up-left {
+  left: 0;
+  bottom: 0;
+}
+
+.inner-up-right {
+  right: 0;
+  bottom: 0;
+}
+
+.inner-down-left {
+  left: 0;
+  top: 0;
+}
+
+.inner-down-right {
+  right: 0;
+  top: 0;
+}
 
 
 /* Circle row 6 */
@@ -362,4 +487,25 @@ body {
   width: var(--square-size);
   height: calc(calc(var(--square-size) * 2) + calc(var(--white-space) * 3));
   background-color: #F22B26;
+}
+
+
+
+
+/* NEW UPCOMING CODE FOR GRADIENTS */
+/* This is no-where from complete, but I need to put it somewhere... so might as well be here! */
+
+/* Created as a test, through https://colorzilla.com/gradient-editor/ - Removed all fallbacks! */
+.some-fake-class {
+  background: linear-gradient(to bottom,
+      #999999 0%,
+      #999999 10%,
+      #000000 10%,
+      #000000 20%,
+      #ffffff 20%,
+      #ffffff 30%,
+      #000000 30%,
+      #000000 60%,
+      #ffffff 60%,
+      #ffffff 100%);
 }
