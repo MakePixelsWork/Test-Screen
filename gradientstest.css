@@ -1,0 +1,19 @@
+
+
+/* NEW UPCOMING CODE FOR GRADIENTS */
+/* This is no-where from complete, but I need to put it somewhere... so might as well be here! */
+
+/* Created as a test, through https://colorzilla.com/gradient-editor/ - Removed all fallbacks! */
+.some-fake-class {
+  background: linear-gradient(to bottom,
+      #999999 0%,
+      #999999 10%,
+      #000000 10%,
+      #000000 20%,
+      #ffffff 20%,
+      #ffffff 30%,
+      #000000 30%,
+      #000000 60%,
+      #ffffff 60%,
+      #ffffff 100%);
+}
