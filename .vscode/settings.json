@@ -1,7 +1,4 @@
 {
-  // Switched off, because you need to learn JavaScript
-  // "javascript.format.enable": false,
-
   "css.format.enable": false,
   "css.format.newlineBetweenRules": false,
   "css.format.newlineBetweenSelectors": false,
@@ -20,6 +17,9 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "html.format.wrapLineLength": 0,
+
+  // Switched off, because you need to learn JavaScript
+  // "javascript.format.enable": false,
 
   "scss.format.enable": false,
   "scss.format.newlineBetweenRules": false,
