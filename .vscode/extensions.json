@@ -1,10 +1,10 @@
 {
   "recommendations": [
     "christian-kohler.path-intellisense",
+    "ecmel.vscode-html-css",
     "editorconfig.editorconfig",
-    "formulahendry.auto-rename-tag",
-    "pkief.material-icon-theme",
     "eg2.vscode-npm-script",
-    "ecmel.vscode-html-css"
+    "formulahendry.auto-rename-tag",
+    "pkief.material-icon-theme"
   ]
 }
