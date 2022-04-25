@@ -4,6 +4,9 @@
 # good code ethics yourself. Learn to fucking code! Do NOT remove this ignore file,
 # or you will be shot, fired, kicked, deleted and terminated!
 
+# Additional info
+# > https://prettier.io/docs/en/ignore.html
+
 # Ignore common extensions
 *.asp
 *.aspx
@@ -301,6 +304,12 @@ node_modules/**
 template/**
 template/public/**
 template/src/**
+
+# Ignore folders (as given in their examples)
+**/.git
+**/.svn
+**/.hg
+**/node_modules
 
 # Ignore all
 # Put as last rule, because Prettier may ignore this (according to reviews online)
