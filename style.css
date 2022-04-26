@@ -1,7 +1,7 @@
 :root {
 
   /* Scale whole test screen, by deviding it with a number */
-    --divider: 2;
+    --divider: 1;
 
   /* Squares */
   --square-size: calc(150px/var(--divider));
@@ -109,11 +109,107 @@ body {
 
 
 /* BG > GRIDS */
+/* With a little help from > https://www.the-art-of-web.com/css/linear-gradients/ */
 .grid-left, .grid-right {
   position: absolute;
   z-index: 1;
-  background-image: url('images/bg-grid-left.svg');
+
+  background: url('images/bg-grid-left.svg');
   background-size: contain;
+  background: #ffffff;
+  background: linear-gradient(180deg,
+    /*  7px */  #999999 0 calc(7px/var(--divider)),
+
+    /* 13px */ #ffffff calc(7px/var(--divider)) calc(20px/var(--divider)),
+
+    /* 20px */ #000000 calc(20px/var(--divider)) calc(40px/var(--divider)),
+    /* 20px */ #ffffff calc(40px/var(--divider)) calc(60px/var(--divider)),
+    /* 20px */ #000000 calc(60px/var(--divider)) calc(80px/var(--divider)),
+
+    /* 18px */ #ffffff calc(80px/var(--divider)) calc(98px/var(--divider)),
+    /* 18px */ #000000 calc(98px/var(--divider)) calc(116px/var(--divider)),
+    /* 18px */ #ffffff calc(116px/var(--divider)) calc(134px/var(--divider)),
+    /* 18px */ #000000 calc(134px/var(--divider)) calc(152px/var(--divider)),
+
+    /* 16px */ #ffffff calc(152px/var(--divider)) calc(168px/var(--divider)),
+    /* 16px */ #000000 calc(168px/var(--divider)) calc(184px/var(--divider)),
+    /* 16px */ #ffffff calc(184px/var(--divider)) calc(200px/var(--divider)),
+    /* 16px */ #000000 calc(200px/var(--divider)) calc(216px/var(--divider)),
+
+    /* 14px */ #ffffff calc(216px/var(--divider)) calc(230px/var(--divider)),
+    /* 14px */ #000000 calc(230px/var(--divider)) calc(244px/var(--divider)),
+    /* 14px */ #ffffff calc(244px/var(--divider)) calc(258px/var(--divider)),
+    /* 14px */ #000000 calc(258px/var(--divider)) calc(272px/var(--divider)),
+
+    /* 13px */ #ffffff calc(272px/var(--divider)) calc(285px/var(--divider)),
+    /* 13px */ #000000 calc(285px/var(--divider)) calc(298px/var(--divider)),
+    /* 13px */ #ffffff calc(298px/var(--divider)) calc(311px/var(--divider)),
+    /* 13px */ #000000 calc(311px/var(--divider)) calc(324px/var(--divider)),
+
+    /* 12px */ #ffffff calc(324px/var(--divider)) calc(336px/var(--divider)),
+    /* 12px */ #000000 calc(336px/var(--divider)) calc(348px/var(--divider)),
+    /* 12px */ #ffffff calc(348px/var(--divider)) calc(360px/var(--divider)),
+    /* 12px */ #000000 calc(360px/var(--divider)) calc(372px/var(--divider)),
+    /* 12px */ #ffffff calc(372px/var(--divider)) calc(384px/var(--divider)),
+    /* 12px */ #000000 calc(384px/var(--divider)) calc(396px/var(--divider)),
+
+    /* 11px */ #ffffff calc(396px/var(--divider)) calc(407px/var(--divider)),
+    /* 11px */ #000000 calc(407px/var(--divider)) calc(418px/var(--divider)),
+    /* 11px */ #ffffff calc(418px/var(--divider)) calc(429px/var(--divider)),
+    /* 11px */ #000000 calc(429px/var(--divider)) calc(440px/var(--divider)),
+    /* 11px */ #ffffff calc(440px/var(--divider)) calc(451px/var(--divider)),
+    /* 11px */ #000000 calc(451px/var(--divider)) calc(462px/var(--divider)),
+
+    /* 10px */ #ffffff calc(462px/var(--divider)) calc(472px/var(--divider)),
+    /* 10px */ #000000 calc(472px/var(--divider)) calc(482px/var(--divider)),
+    /* 10px */ #ffffff calc(482px/var(--divider)) calc(492px/var(--divider)),
+    /* 10px */ #000000 calc(492px/var(--divider)) calc(502px/var(--divider)),
+    /* 10px */ #ffffff calc(502px/var(--divider)) calc(512px/var(--divider)),
+    /* 10px */ #000000 calc(512px/var(--divider)) calc(522px/var(--divider)),
+
+    /*  9px */ #ffffff calc(522px/var(--divider)) calc(531px/var(--divider)),
+    /*  9px */ #000000 calc(531px/var(--divider)) calc(540px/var(--divider)),
+    /*  9px */ #ffffff calc(540px/var(--divider)) calc(549px/var(--divider)),
+    /*  9px */ #000000 calc(549px/var(--divider)) calc(558px/var(--divider)),
+    /*  9px */ #ffffff calc(558px/var(--divider)) calc(567px/var(--divider)),
+    /*  9px */ #000000 calc(567px/var(--divider)) calc(576px/var(--divider)),
+
+    /*  8px */ #ffffff calc(576px/var(--divider)) calc(584px/var(--divider)),
+    /*  8px */ #000000 calc(584px/var(--divider)) calc(592px/var(--divider)),
+    /*  8px */ #ffffff calc(592px/var(--divider)) calc(600px/var(--divider)),
+    /*  8px */ #000000 calc(600px/var(--divider)) calc(608px/var(--divider)),
+    /*  8px */ #ffffff calc(608px/var(--divider)) calc(616px/var(--divider)),
+    /*  8px */ #000000 calc(616px/var(--divider)) calc(624px/var(--divider)),
+
+    /*  7px */ #ffffff calc(624px/var(--divider)) calc(631px/var(--divider)),
+    /*  7px */ #000000 calc(631px/var(--divider)) calc(638px/var(--divider)),
+    /*  7px */ #ffffff calc(638px/var(--divider)) calc(645px/var(--divider)),
+    /*  7px */ #000000 calc(645px/var(--divider)) calc(652px/var(--divider)),
+    /*  7px */ #ffffff calc(652px/var(--divider)) calc(659px/var(--divider)),
+    /*  7px */ #000000 calc(659px/var(--divider)) calc(666px/var(--divider)),
+    /*  7px */ #ffffff calc(666px/var(--divider)) calc(673px/var(--divider)),
+    /*  7px */ #000000 calc(673px/var(--divider)) calc(680px/var(--divider)),
+    /*  7px */ #ffffff calc(680px/var(--divider)) calc(687px/var(--divider)),
+    /*  7px */ #000000 calc(687px/var(--divider)) calc(694px/var(--divider)),
+
+    /*  6px */ #ffffff calc(694px/var(--divider)) calc(700px/var(--divider)),
+    /*  6px */ #000000 calc(700px/var(--divider)) calc(706px/var(--divider)),
+    /*  6px */ #ffffff calc(706px/var(--divider)) calc(712px/var(--divider)),
+    /*  6px */ #000000 calc(712px/var(--divider)) calc(718px/var(--divider)),
+    /*  6px */ #ffffff calc(718px/var(--divider)) calc(724px/var(--divider)),
+    /*  6px */ #000000 calc(724px/var(--divider)) calc(730px/var(--divider)),
+    /*  6px */ #ffffff calc(730px/var(--divider)) calc(736px/var(--divider)),
+    /*  6px */ #000000 calc(736px/var(--divider)) calc(742px/var(--divider)),
+    /*  6px */ #ffffff calc(742px/var(--divider)) calc(748px/var(--divider)),
+    /*  6px */ #000000 calc(748px/var(--divider)) calc(754px/var(--divider)),
+    /*  6px */ #ffffff calc(754px/var(--divider)) calc(760px/var(--divider)),
+    /*  6px */ #000000 calc(760px/var(--divider)) calc(766px/var(--divider)),
+    /*  6px */ #ffffff calc(766px/var(--divider)) calc(772px/var(--divider)),
+    /*  6px */ #000000 calc(772px/var(--divider)) calc(778px/var(--divider)),
+    /*  6px */ #ffffff calc(778px/var(--divider)) calc(784px/var(--divider)),
+    /*  6px */ #000000 calc(784px/var(--divider)) calc(790px/var(--divider))
+
+  );
   width: var(--square-size);
   height: calc(calc(var(--square-size) * 5) + calc(var(--white-space) * 4));
 }
@@ -121,8 +217,19 @@ body {
 .grid-left-top, .grid-right-top, .grid-left-bottom, .grid-right-bottom {
   position: absolute;
   z-index: 1;
+
   background-image: url('images/bg-grid-left-top.svg');
   background-size: contain;
+  background: #ffffff;
+  background: repeating-linear-gradient(45deg,
+
+    /* 6px zebra, on a 0.91px off-set */
+  #ffffff, #ffffff calc(0.91px/var(--divider)),
+  #000000 calc(0.91px/var(--divider)), #000000 calc(6.91px/var(--divider)),
+  #ffffff calc(6.91px/var(--divider)), #ffffff calc(12px/var(--divider))
+
+  );
+
   width: calc(calc(var(--square-size) * 2) + var(--white-space));
   height: calc(calc(var(--square-size) * 2) + var(--white-space));
 }
@@ -130,6 +237,15 @@ body {
 .grid-left-bottom, .grid-right-bottom {
   background-image: url('images/bg-grid-left-bottom.svg');
   background-size: contain;
+  background: #ffffff;
+  background: repeating-linear-gradient(-45deg,
+
+    /* 10.5px zebra, on a 3.63px off-set */
+    #ffffff, #ffffff calc(3.63px/var(--divider)),
+    #000000 calc(3.63px/var(--divider)), #000000 calc(14.13px/var(--divider)),
+    #ffffff calc(14.13px/var(--divider)), #ffffff calc(21px/var(--divider))
+
+  );
 }
 
 .grid-right         { transform: rotate(180deg); }
