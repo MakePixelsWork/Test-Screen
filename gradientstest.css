@@ -1,19 +1,19 @@
 
+/* NEW UPCOMING CODE FOR CENTER GRADIENTS */
+/* Same as others, but in their own boxes */
 
-/* NEW UPCOMING CODE FOR GRADIENTS */
-/* This is no-where from complete, but I need to put it somewhere... so might as well be here! */
+.grid-block-1 {
+  /* TODO */
+  background: linear-gradient(90deg,
+    /*  7px */  #999999 0 calc(7px/var(--divider)),
 
-/* Created as a test, through https://colorzilla.com/gradient-editor/ - Removed all fallbacks! */
-.some-fake-class {
-  background: linear-gradient(to bottom,
-      #999999 0%,
-      #999999 10%,
-      #000000 10%,
-      #000000 20%,
-      #ffffff 20%,
-      #ffffff 30%,
-      #000000 30%,
-      #000000 60%,
-      #ffffff 60%,
-      #ffffff 100%);
+    /* 13px */ #ffffff calc(7px/var(--divider)) calc(20px/var(--divider)),
+
+    /* 20px */ #000000 calc(20px/var(--divider)) calc(40px/var(--divider)),
+    /* 20px */ #ffffff calc(40px/var(--divider)) calc(60px/var(--divider)),
+    /* 20px */ #000000 calc(60px/var(--divider)) calc(80px/var(--divider))
+
+    /* ETC */
+
+  );
 }
