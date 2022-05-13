@@ -118,7 +118,8 @@ body {
   background-size: contain;
   background: #ffffff;
   background: linear-gradient(180deg,
-    /*  7px */  #999999 0 calc(7px/var(--divider)),
+
+    /*  7px */ #999999 0 calc(7px/var(--divider)),
 
     /* 13px */ #ffffff calc(7px/var(--divider)) calc(20px/var(--divider)),
 
@@ -224,9 +225,9 @@ body {
   background: repeating-linear-gradient(45deg,
 
     /* 6px zebra, on a 0.91px off-set */
-  #ffffff, #ffffff calc(0.91px/var(--divider)),
-  #000000 calc(0.91px/var(--divider)), #000000 calc(6.91px/var(--divider)),
-  #ffffff calc(6.91px/var(--divider)), #ffffff calc(12px/var(--divider))
+    #ffffff, #ffffff calc(0.91px/var(--divider)),
+    #000000 calc(0.91px/var(--divider)), #000000 calc(6.91px/var(--divider)),
+    #ffffff calc(6.91px/var(--divider)), #ffffff calc(12px/var(--divider))
 
   );
 
@@ -447,6 +448,69 @@ body {
   width: calc(var(--circle-size) - calc(calc(var(--square-size) + var(--white-space)) * 2));
   height: calc(calc(var(--square-size) * 2) + calc(var(--white-space) * 2));
 }
+
+.grid-middle {
+  position: relative;
+  display: inline-block;
+  width: calc(calc(var(--square-size) * 2) + calc(var(--white-space) * 2));
+  height: calc(calc(var(--square-size) * 2) + calc(var(--white-space) * 2));
+}
+.grid-middle-1 {
+  background: #ffffff;
+  background: repeating-linear-gradient(90deg,
+
+    /* 40px zebra, on a 20px off-set */
+    #ffffff, #ffffff calc(20px/var(--divider)),
+    #000000 calc(20px/var(--divider)), #000000 calc(60px/var(--divider)),
+    #ffffff calc(60px/var(--divider)), #ffffff calc(80px/var(--divider))
+
+  );
+}
+.grid-middle-2 {
+  background: #ffffff;
+  background: repeating-linear-gradient(90deg,
+
+    /* 16px zebra, on a 8px off-set */
+    #ffffff, #ffffff calc(8px/var(--divider)),
+    #000000 calc(8px/var(--divider)), #000000 calc(24px/var(--divider)),
+    #ffffff calc(24px/var(--divider)), #ffffff calc(32px/var(--divider))
+
+  );
+}
+.grid-middle-3 {
+  background: #ffffff;
+  background: repeating-linear-gradient(90deg,
+
+    /* 10.6(667)px zebra, on a 5.3(333)px off-set */
+    #ffffff, #ffffff calc(5.3px/var(--divider)),
+    #000000 calc(5.3px/var(--divider)), #000000 calc(15.9px/var(--divider)),
+    #ffffff calc(15.9px/var(--divider)), #ffffff calc(21.2px/var(--divider))
+
+  );
+}
+.grid-middle-4 {
+  background: #ffffff;
+  background: repeating-linear-gradient(90deg,
+
+    /* 8px zebra, on a 4px off-set */
+    #ffffff, #ffffff calc(4px/var(--divider)),
+    #000000 calc(4px/var(--divider)), #000000 calc(12px/var(--divider)),
+    #ffffff calc(12px/var(--divider)), #ffffff calc(16px/var(--divider))
+
+  );
+}
+.grid-middle-5 {
+  background: #ffffff;
+  background: repeating-linear-gradient(90deg,
+
+    /* 6.4px zebra, on a 3.2px off-set */
+    #ffffff, #ffffff calc(3.2px/var(--divider)),
+    #000000 calc(3.2px/var(--divider)), #000000 calc(9.6px/var(--divider)),
+    #ffffff calc(9.6px/var(--divider)), #ffffff calc(12.8px/var(--divider))
+
+  );
+}
+
 
 .grid-bar-side {
   position: relative;
