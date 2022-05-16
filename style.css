@@ -443,7 +443,7 @@ body {
 .grid-bar {
   position: relative;
   display: inline-block;
-  background-image: url('images/bg-grid-bar.svg');
+  background-image: url('images/bg-grid-bar.svg'); /* Fallback behind other divs */
   background-size: contain;
   width: calc(var(--circle-size) - calc(calc(var(--square-size) + var(--white-space)) * 2));
   height: calc(calc(var(--square-size) * 2) + calc(var(--white-space) * 2));
