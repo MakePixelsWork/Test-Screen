@@ -1,7 +1,7 @@
 :root {
 
   /* Scale whole test screen, by deviding it with a number (default = 2) */
-    --divider: 2;
+    --divider: 4;
 
   /* Squares */
   --square-size: calc(150px/var(--divider));
