@@ -30,3 +30,6 @@ Not soon after the 10px white-space was created, I decided that its better to us
 
 # Copyright
 Since I do not own the original rights to this test screen, I have chosen for an MIT License. Feel free to use it, but please reference me as the original code creator. The design is not mine, the code is.
+
+**Victor van der Put**<br>
+[@MakePixelsWork](https://github.com/MakePixelsWork)
